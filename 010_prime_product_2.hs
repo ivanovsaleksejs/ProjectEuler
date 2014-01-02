@@ -1,5 +1,5 @@
 import Euler.Primes
 
-listP limit = filter (<(toInteger limit)) $ take (limit `div` 10) primesST
+listP limit = takeWhile (<(toInteger limit)) primesST
 
 main = print $ sum $ listP 2000000
