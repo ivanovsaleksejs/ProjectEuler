@@ -1,13 +1,19 @@
 module Euler.Func (
- Euler.Func.sum,
- Euler.Func.sumDigits
+ sumR,
+ sumDigits,
+ twice,
+ divisors
 )
 
 where
 
 import Data.Char
 
-sum x = (1 + x) * x `div` 2 
+sumR x = (1 + x) * x `div` 2 
 
 sumDigits :: Integer -> Int
-sumDigits = Prelude.sum . map digitToInt . show
+sumDigits = sum . map digitToInt . show
+
+twice f = f . f
+
+divisors x = 1 : filter ((== 0) . mod x) [2 .. x `div` 2]

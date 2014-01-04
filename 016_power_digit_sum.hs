@@ -1,3 +1,3 @@
-import qualified Euler.Func as F (sumDigits)
+import Euler.Func (sumDigits)
 
-main = print . F.sumDigits $ 2^1000
+main = print . sumDigits $ 2^1000

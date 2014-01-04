@@ -1,4 +1,4 @@
-import Euler.Primes
+import Euler.Primes (primesST)
 
 listP limit = takeWhile (<(toInteger limit)) primesST
 

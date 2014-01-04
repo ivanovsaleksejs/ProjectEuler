@@ -1,4 +1,4 @@
-import Euler.Primes
+import Euler.Primes (prime)
 
 listP n limit
     | p > limit = []

@@ -1,5 +1,5 @@
-import Data.List
-import Euler.Primes
+import Data.List (group)
+import Euler.Primes (pfactor)
 
 primeFactor n = pfactor n []
 

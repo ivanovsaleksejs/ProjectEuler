@@ -1,3 +1,3 @@
-import qualified Euler.Func as F (sumDigits)
+import Euler.Func (sumDigits)
 
-main = print . F.sumDigits $ product [1..100]
+main = print . sumDigits $ product [1..100]

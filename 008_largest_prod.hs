@@ -1,4 +1,4 @@
-import Data.Char
+import Data.Char (digitToInt)
 
 products (a1:a2:a3:a4:a5:as)
     | as == [] = m

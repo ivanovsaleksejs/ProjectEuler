@@ -1,4 +1,4 @@
-import Euler.Fib
+import Euler.Fib (fib)
 
 sumFibs n
     | f > 4000000 = 0

@@ -1,6 +1,6 @@
 import Data.List (nubBy, group, sort, sortBy)
 import Data.Function (on)
-import Euler.Primes
+import Euler.Primes (pfactor)
 
 primeFactor p = pfactor p []
 
