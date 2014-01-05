@@ -9,6 +9,6 @@
 -- So this diagonal is a sum of squares 1..n-1 plus sum of range (2..n).
 -- If we combine both formulas, we get this:
 
-diagSum n = (n*(4*n^2 + 3*n + 8) - 6) `div` 6
+diagSum n = ((4 * n + 3) * n + 8) * n `div` 6 - 1
 
 main = print $ diagSum 1001
