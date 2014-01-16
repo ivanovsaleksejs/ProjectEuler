@@ -1,7 +1,8 @@
 ProjectEuler
 ============
+<img src="http://projecteuler.net/profile/aleksejs.png" />
 
-My solutions for Project Euler problems using Haskell.
+My solutions for <a href="http://projecteuler.net/" target="_blank">Project Euler</a> problems using Haskell.
 
 Algorithms like fibonacci or primes are taken somewhere from the internet.
 
