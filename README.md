@@ -18,4 +18,5 @@ Or you can use test script to launch several tests
 will launch all tests from 021-030 directory.
 
 <hr />
+<a name="algo"></a>
 <i>Algorithms like fibonacci or primes are taken somewhere from the internet.</i>
