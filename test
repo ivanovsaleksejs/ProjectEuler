@@ -1,0 +1,8 @@
+#!/bin/bash
+DIR=$(($1*10+1))
+DIR2=$(($1*10+10))
+for file in $(printf %03d "$DIR")-$(printf %03d "$DIR2")/*.hs
+    do
+        echo $file
+        runhaskell $file
+    done

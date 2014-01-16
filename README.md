@@ -5,9 +5,13 @@ My solutions for Project Euler problems using Haskell.
 
 Algorithms like fibonacci or primes are taken somewhere from the internet.
 
-First level achieved:
+To launch test, just run, for example:
+<pre>
+runhaskell 011-020/011_product_grid.hs 
+</pre>
 
- Nice work, aleksejs, you've just advanced to Level 1.
- 57467 members (16.22%) have made it this far.
- You have earned 1 new award:
- The Journey Begins: Progress to Level 1 by solving twenty-five problems
+Or you can use test script to launch several tests
+<pre>
+./test 2
+</pre>
+will launch all tests from 021-030 directory.
