@@ -2,7 +2,8 @@ module Euler.Primes (
  primesST,
  prime,
  isPrime,
- pfactor
+ pfactor,
+ pfactor'
 )
 
 where
@@ -29,3 +30,10 @@ pfactor p ps
     where
         k = getNext 0 p
         res = p `div` k
+        
+pfactor' n = factor primesST n
+    where 
+        factor ps@(p:pt) n 
+            | p*p > n      = [n]               
+            | rem n p == 0 = p : factor ps (quot n p) 
+            | otherwise    =     factor pt n
