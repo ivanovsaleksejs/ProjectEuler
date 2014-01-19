@@ -2,8 +2,7 @@ module Euler.Primes (
  primesST,
  prime,
  isPrime,
- pfactor,
- pfactor'
+ pfactor
 )
 
 where
@@ -18,20 +17,7 @@ prime n = (take (n+1) primesST) !! n
 
 isPrime x = x `elem` (takeWhile (<=x) primesST)
 
-getNext n p
-    | p `mod` k == 0 = k
-    | otherwise      = getNext (n+1) p
-    where k = prime n
-
-pfactor p ps
-    | p < 2     = []
-    | p == k    = p : ps
-    | otherwise = pfactor res (k:ps)
-    where
-        k = getNext 0 p
-        res = p `div` k
-        
-pfactor' n = factor primesST n
+pfactor n = factor primesST n
     where 
         factor ps@(p:pt) n 
             | p*p > n      = [n]               

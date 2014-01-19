@@ -1,9 +1,7 @@
 import Data.List (group)
 import Euler.Primes (pfactor)
 
-primeFactor n = pfactor n []
-
-divisors = product . map ((+1) . length) . group . primeFactor
+divisors = product . map ((+1) . length) . group . pfactor
 
 triangulars = scanl (+) 0 [1..]
 
