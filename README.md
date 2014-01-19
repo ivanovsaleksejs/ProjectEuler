@@ -1,5 +1,6 @@
 ProjectEuler
 ============
+<img src="http://projecteuler.net/profile/aleksejs.png" />
 
 My solutions<a href="#algo"><sup>*</sup></a> for <a href="http://projecteuler.net/" target="_blank">Project Euler</a> problems using Haskell.
 
